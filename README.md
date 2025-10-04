@@ -16,5 +16,5 @@ This is a report on security assessment of http://www.itsecgames.com with vulner
 ---
 
 # Findings
- **Wappalyzer**
+ **Wappalyzer** /n
  We found the website uses Apache HTTP Server and Microsoft for email
