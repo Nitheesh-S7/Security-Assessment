@@ -15,5 +15,5 @@ This is a report on security assessment of http://www.itsecgames.com with vulner
 
 ---
 
-# Wappalyzer
- 
+# Findings
+ Wapplyzer
