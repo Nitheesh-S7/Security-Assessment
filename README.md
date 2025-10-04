@@ -14,3 +14,5 @@ This is a report on security assessment of http://www.itsecgames.com with vulner
  * **SSL Labs** - *(Checks website SSL/TLS certificate status and information)*
 
 ---
+
+#Wappalyzer
