@@ -4,13 +4,13 @@ This is a report on security assessment of http://www.itsecgames.com with vulner
 ---
 
 # Tools Used For Analysis
- * **Wapalyzer** _(fingerprinting websites technologies)_
- * Nmap (port scanning and enumeration of services)
- * Gobuster (fuzzing directories and virtual hosts)
- * Nikto (vulnerability scanning tool for web servers)
- * OWASP ZAP (web app security scanner)
- * DNS Lookup (enumerates DNS records)
- * SecurityHeaders.com
- * SSL Labs
+ * **Wappalyzer** _(fingerprinting websites technologies)_
+ * **Nmap** (port scanning and enumeration of services)
+ * **Gobuster** (fuzzing directories and virtual hosts)
+ * **Nikto** (vulnerability scanning tool for web servers)
+ * **OWASP ZAP** (web app security scanner)
+ * **DNS Lookup** (enumerates DNS records)
+ * **SecurityHeaders.com**
+ * **SSL Labs**
 
 ---
