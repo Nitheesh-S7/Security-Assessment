@@ -4,7 +4,7 @@ This is a report on security assessment of http://www.itsecgames.com with vulner
 ---
 
 # Tools Used For Analysis
- * **Wapalyzer** __(fingerprinting websites technologies)__
+ * **Wapalyzer** _(fingerprinting websites technologies)_
  * Nmap (port scanning and enumeration of services)
  * Gobuster (fuzzing directories and virtual hosts)
  * Nikto (vulnerability scanning tool for web servers)
