@@ -6,6 +6,8 @@ This is a report on security assessment of http://www.itsecgames.com with vulner
 # Tools Used For Analysis
  * Wappalyzer
  * Nmap
+ * Gobuster
+ * SQL Map
  * Nikto
  * OWASP ZAP
  * DNS Lookup
