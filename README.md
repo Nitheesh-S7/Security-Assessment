@@ -26,7 +26,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * The scan revealed open ports 22 (ssh), 80 (http) and 443 (https)
  * Port 22 is running OpenSSH 6.7p1 which outdated and has vulnerabilities like CVE-2016-0777 and CVE-2018-1547
  * Found 36 of exposed directories through robots.txt including CHANGELOG.txt and intallation files exposing technologies and versions
- * Drupal version 7.69 exposed which is deprecated has muliple vulnerabilities found in https:\\mmesec.com domain hosted on same IP 
+ * Drupal version 7.69 exposed which is deprecated has muliple vulnerabilities found in https://mmesec.com domain hosted on same IP 
  * Found expired TLS certificate
 
  **Gobuster**
