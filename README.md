@@ -11,7 +11,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * **OWASP ZAP**  - *(web application security scanner)*
  * **OpenVAS**  - *(vulnerability scanner)*
  * **MX Toolbox**  - *(enumerates DNS,DMARC and SPF records)*
- * **Hacker Target** - *(Reverse IP lookup for domains)*
+ * **Hacker Target** - *(Reverse IP lookup for domains in IP)*
  * **SecurityHeaders.com** - *(Checks for vulnerable and missing headers)*
  * **SSL Labs** - *(Checks website SSL/TLS certificate status and information)*
 
