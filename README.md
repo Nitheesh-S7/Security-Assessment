@@ -24,7 +24,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
  **Nmap**
 
- The scan revealed open ports 22 (ssh),80 (http) and 443 (https)
- Port 22 is running OpenSSH 6.7p1 which outdated and has vulnerabilities like CVE-2016-0777 and CVE-2018-1547
- Found a lot of exposed directories through robots.txt 
+ * The scan revealed open ports 22 (ssh),80 (http) and 443 (https)
+ * Port 22 is running OpenSSH 6.7p1 which outdated and has vulnerabilities like CVE-2016-0777 and CVE-2018-1547
+ * Found a lot of exposed directories through robots.txt 
  
