@@ -1,5 +1,5 @@
 # Security Assessment
-This is a report on security assessment of http://www.itsecgames.com with vulnerability assessment, mitigation methods and SSL/TLS analysis.
+This is a report on security assessment of http://www.itsecgames.com domain including vulnerability assessment, mitigation methods and SSL/TLS analysis.
 
 ---
 
@@ -9,7 +9,9 @@ This is a report on security assessment of http://www.itsecgames.com with vulner
  * **Gobuster**  - *(fuzzing directories and virtual hosts)*
  * **Nikto**  - *(vulnerability scanning tool for web servers)*
  * **OWASP ZAP**  - *(web application security scanner)*
- * **DNS Lookup**  - *(enumerates DNS records)*
+ * **OpenVAS**  - *(vulnerability scanner)*
+ * **MX Toolbox**  - *(enumerates DNS records)*
+ * **Hacker Target** - *(Reverse IP lookup for domains)*
  * **SecurityHeaders.com** - *(Checks for vulnerable and missing headers)*
  * **SSL Labs** - *(Checks website SSL/TLS certificate status and information)*
 
