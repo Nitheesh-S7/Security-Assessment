@@ -24,4 +24,4 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
  **Nmap**
 
- The scan revealed open ports 22(ssh),80(http) and 443(https) 
+ The scan revealed open ports 22 (ssh),80 (http) and 443 (https) 
