@@ -70,15 +70,14 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
     
     * mmebv.be
     * www.mmebv.be
-    
-    mmesec.be
-    www.mmesec.be
-    itsecgames.com
-    mmesec.com
-    www.mmesec.com
-    mmebv.com
-    www.mmebv.com
-    mmebvba.com
-    www.mmebvba.com
+    * mmesec.be
+    * www.mmesec.be
+    * itsecgames.com
+    * mmesec.com
+    * www.mmesec.com
+    * mmebv.com
+    * www.mmebv.com
+    * mmebvba.com
+    * www.mmebvba.com
 
  
