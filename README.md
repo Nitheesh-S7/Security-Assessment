@@ -75,7 +75,7 @@ This is a report on security assessment in http://www.itsecgames.com domain, Inc
  * No DMARC record published 
  * DMARC(Domain-based Message Authentication) policy is not enabled which makes it vulnerable to email spoofing with the lack of email verification
  * TLS/SSL Certificate name mismatch in domain pointing to a different domain
- * A null DNS lookup was found for include (mme-srv-dc1.mme.local) which can cause problem in email delivery
+ * A null DNS lookup was found for include (mme-srv-dc1.mme.local) which leaks internal Active direcory naming structure
  * SOA (Start of Authority) Expire Value out of recommended range which may cause downtime if primary DNS server fails, secondary server may stop responding to DNS querries sooner than reccomended
 
 ---
@@ -126,6 +126,15 @@ This is a report on security assessment in http://www.itsecgames.com domain, Inc
 | Medium |Depricated OpenSSH version 6.7p1, Weak SSH host key and MAC Algorithm  | Nmap, OpenVAS | Brute force attacks, Known CVE's | Upgrade to newer OpenSSH version  |
 | Low |Exposed CHANGELOG.txt, install.php, MAINTAINERS.txt and other file paths mostly relevent to mmesec.com host in the same ip present in robots.txt, also have no restricted access to their paths | Nmap, Nikto | Leaking web server Technologies and versions  | Remove files from webroot and restrict access  |
 | High |Depricated Drupal version 7.69 found on mmesec.com host    | Nmap, Nikto | Muliple known exploits | Updating Drupal version |
-| High |Expired Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch to web.mmebvba.com domain and no forward secrecy | Nmap, OpenVAS, SSL Labs, MX Toolbox, Nikto | Traffic being sent in clear text | Getting a valid certificate from trusted CA with proper domain name  |
-| |X-Frame options header missing    | S | DNS |  |
-|
+| High |Expired Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch pointing to web.mmebvba.com domain and no forward secrecy | Nmap, OpenVAS, SSL Labs, MX Toolbox, Nikto | Traffic being sent in clear text | Getting a valid certificate from trusted CA with proper domain name  |
+| Medium |X-Frame options header missing    | S | DNS |  |
+| |X-Content-Type-Options header missing| | | |
+| | Referrer-Policy| | | |
+| | E-Tag | | | |
+| |Content-Security-Policy | | | |
+| |  HTTP OPTIONS method| | | |
+| | Strict-Transport-Security_Header (HSTS)| | | |
+| |DMARC(Domain-based Message Authentication) policy is not enabled | | | |
+| | Permission-policy| | | |
+| | SOA (Start of Authority) Expire Value out of recommended range | | | |
+| | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup | | | |
