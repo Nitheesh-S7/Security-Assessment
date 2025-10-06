@@ -128,13 +128,13 @@ This is a report on security assessment in http://www.itsecgames.com domain, Inc
 | High |Depricated Drupal version 7.69 found on mmesec.com host    | Nmap, Nikto | Muliple known exploits | Updating Drupal version |
 | High |Expired Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch pointing to web.mmebvba.com domain and no forward secrecy | Nmap, OpenVAS, SSL Labs, MX Toolbox, Nikto | Traffic being sent in clear text | Getting a valid certificate from trusted CA with proper domain name  |
 | Medium |X-Frame options header missing    | S | DNS |  |
-| |X-Content-Type-Options header missing| | | |
-| | Referrer-Policy| | | |
-| | E-Tag | | | |
-| |Content-Security-Policy | | | |
-| |  HTTP OPTIONS method| | | |
-| | Strict-Transport-Security_Header (HSTS)| | | |
-| |DMARC(Domain-based Message Authentication) policy is not enabled | | | |
-| | Permission-policy| | | |
-| | SOA (Start of Authority) Expire Value out of recommended range | | | |
-| | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup | | | |
+| Medium |X-Content-Type-Options header missing| | | |
+| Medium |Referrer-Policy header missing| | | |
+| High | E-Tag present in website| | | |
+| Medium |Content-Security-Policy header missing| | | |
+| Low |  HTTP OPTIONS method enabled| | | |
+| Medium | Strict-Transport-Security_Header (HSTS) header missing| | | |
+| Low |DMARC(Domain-based Message Authentication) policy is not enabled | | | |
+| Low | Permission-policy header missing | | | |
+| Low | SOA (Start of Authority) Expire Value out of recommended range | | | |
+| Low | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup | | | |
