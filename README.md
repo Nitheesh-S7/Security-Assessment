@@ -51,16 +51,22 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * Strict-Transport-Security_Header (HSTS) not set which allows downgrade attacks from HTTTPS to HTTP
  * No TLS/SSL Support found
 
+---
+
  **OWASP ZAP**
  
  * Strict-Transport-Security_Header (HSTS) not set which allows downgrade attacks
  * Content-Security-Policy header not found on website which makes it more vulnerable to attacks
+
+---
 
  **OpenVAS**
  
  * Weak Host Key Algorithm found for SSH which uses ssh-dss (Digital signature algorithm) which is depricated
  * Depricated TLS version 1.0 and 1.1 protocols found on certificate which is vulnerable to multiple CVE's 
  * Weak MAC algorithm umac-64-etm@openssh supported on SSH
+
+---
 
  **MX Toolbox**
 
@@ -69,6 +75,8 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * TLS/SSL Certificate name mismatch in domain pointing to a different domain
  * A null DNS lookup was found for include (mme-srv-dc1.mme.local) which can cause problem in email delivery
  * SOA (Start of Authority) Expire Value out of recommended range which may cause downtime if primary DNS server fails, secondary server may stop responding to DNS querries sooner than reccomended
+
+---
 
  **Hacker Target**
 
@@ -87,6 +95,8 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
     * mmebvba.com
     * www.mmebvba.com
 
+---
+
  **SecurityHeaders.com**
 
  * X-Frame-Options header is not found which makes website vulnerable to clickjacking through i-frames
@@ -94,6 +104,8 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * Content-Security-Policy header not found on website which makes it more vulnerable to attacks
  * X-Content-Type-Options header missing which can make it vulnerable to content sniffing attacks 
  * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
+
+---
 
  **SSL Labs**
 
