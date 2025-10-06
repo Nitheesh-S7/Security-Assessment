@@ -65,18 +65,18 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
  **Hacker Target**
 
- 1  Found Multiple hosts names on the ip 31.3.96.40
-
-    * mmebv.be
-    * www.mmebv.be
-    * mmesec.be
-    * www.mmesec.be
-    * itsecgames.com
-    * mmesec.com
-    * www.mmesec.com
-    * mmebv.com
-    * www.mmebv.com
-    * mmebvba.com
-    * www.mmebvba.com
+   Found Multiple hosts names on the ip 31.3.96.40
+    
+    mmebv.be
+    www.mmebv.be
+    mmesec.be
+    www.mmesec.be
+    itsecgames.com
+    mmesec.com
+    www.mmesec.com
+    mmebv.com
+    www.mmebv.com
+    mmebvba.com
+    www.mmebvba.com
 
  
