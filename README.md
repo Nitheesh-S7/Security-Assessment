@@ -127,14 +127,15 @@ This is a report on security assessment in http://www.itsecgames.com domain, Inc
 | Low |Exposed CHANGELOG.txt, install.php, MAINTAINERS.txt and other file paths mostly relevent to mmesec.com host in the same ip present in robots.txt, also have no restricted access to their paths | Nmap, Nikto | Leaking web server Technologies and versions  | Remove files from webroot and restrict access  |
 | High |Depricated Drupal version 7.69 found on mmesec.com host    | Nmap, Nikto | Muliple known exploits | Updating Drupal version |
 | High |Expired Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch pointing to web.mmebvba.com domain and no forward secrecy | Nmap, OpenVAS, SSL Labs, MX Toolbox, Nikto | Traffic being sent in clear text | Getting a valid certificate from trusted CA with proper domain name  |
-| Medium |X-Frame options header missing | SecurityHeaders.com | DNS |  |
-| Medium |X-Content-Type-Options header missing| SecurityHeaders.com, Nikto| | |
-| Medium |Referrer-Policy header missing| SecurityHeaders.com, Nikto| | |
-| High | E-Tag present in website| Nikto | | |
-| Medium |Content-Security-Policy header missing| OSWAP Zap, SecurityHeaders.com, Nikto | | |
-| Low |  HTTP OPTIONS method enabled| Nikto | | |
-| Medium | Strict-Transport-Security_Header (HSTS) header missing| OSWAP Zap, Nikto | | |
-| Low |DMARC(Domain-based Message Authentication) policy is not enabled |MX Toolbox | | |
-| Low | Permission-policy header missing | SecurityHeaders.com | | |
-| Low | SOA (Start of Authority) Expire Value out of recommended range |MX Toolbox | | |
-| Low | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup |MX Toolbox | | |
+| Medium |X-Frame options header missing | SecurityHeaders.com | Click Jacking using iframes |  |
+| Medium |X-Content-Type-Options header missing| SecurityHeaders.com, Nikto| MIME Sniffing with spoofed file extentions | |
+| Medium |Referrer-Policy header missing| SecurityHeaders.com, Nikto| sensitive information leakage from URL | |
+| High | E-Tag present in website| Nikto | Server may leak inode number or multipart MIME boundary, which reveals child process IDs (PID) | |
+| Medium |Content-Security-Policy header missing| OSWAP Zap, SecurityHeaders.com, Nikto | Vulnerability to XSS and external code executions | |
+| Low |  HTTP OPTIONS method enabled| Nikto | Can be used to gain information of webserver and its users if Cross-Orgin-Resource-Sharing (CORS) is incorrectly configured | |
+| Medium | Strict-Transport-Security_Header (HSTS) header missing| OSWAP Zap, Nikto | Vulnerability to cryptographic downgrade attacks | |
+| Low |DMARC(Domain-based Message Authentication) policy is not enabled |MX Toolbox |vulnerability to email spoofing with the lack of email verification | |
+| Low | Permission-policy header missing | SecurityHeaders.com | Less contol over browser access to API's and features| |
+| Low | SOA (Start of Authority) Expire Value out of recommended range |MX Toolbox | If primary DNS server fails, Secondary server may stop responding to DNS querries sooner than reccomended
+ | |
+| Low | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup |MX Toolbox | leaks internal Active direcory naming structure | |
