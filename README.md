@@ -34,3 +34,8 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * Found Directories called images, downloads, js and javascrip with resticted access
 
  **Nikto**
+ 
+ * X-Content-Type-Options header missing which can make it vulnerable to content sniffing attacks incorrectly assessing MIME type of files
+ * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
+ * No Content-Security-Policy which prevents attacks by verifiying only whitelisted data are being loaded in the website
+ * 
