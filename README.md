@@ -18,7 +18,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 ---
 
 # Findings
----
+
  **Wappalyzer** 
  * Found the website uses Apache HTTP Server and Microsoft for Emails
 
@@ -32,9 +32,13 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * Drupal version 7.69 exposed which is deprecated and has muliple critical vulnerabilities found in https://mmesec.com domain.
  * Found TLS certificate expired on 22-5-2025
 
+---
+
  **Gobuster**
 
  * Found Directories called images, downloads, js and javascrip with resticted access
+
+---
 
  **Nikto**
  
