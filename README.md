@@ -1,5 +1,6 @@
 # Security Assessment
-This is a report on security assessment in http://www.itsecgames.com domain, Including vulnerability assessment, mitigation methods and SSL/TLS analysis. All scans were done with publicly available tools with permisson to scan domain. The scan result screenshots can be seen in **"Scan Results"** folder for all scans done on the domain. 
+This is a report on security assessment in http://www.itsecgames.com domain, Including vulnerability assessment, mitigation methods and SSL/TLS analysis. All scans were done with publicly available tools with permisson to scan domain. The scan result screenshots can be seen in **"Scan Results"** folder for all scans done on the domain, Also the Security assessment report pdf will have screenshots wtth the report. 
+ 
 
 ---
 
