@@ -1,5 +1,5 @@
 # Security Assessment
-This is a report on security assessment of http://www.itsecgames.com domain including vulnerability assessment, mitigation methods and SSL/TLS analysis.
+This is a report on security assessment of http://www.itsecgames.com domain including vulnerability assessment, mitigation methods and SSL/TLS analysis. All scans were done with publicly available tools with permisson to scan domain
 
 ---
 
@@ -120,10 +120,10 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
 # Vulnerabilities and Mitigations
 
-| Vulnerability | Repoted Tool | Mitigation |
-|----------|---------|-----------------|
-| H    | S | Se|
-| H    | O | N |
-| H    | M | Sec |
-| M    | S | HTTP|
-| M    | S | DNS |
+|Severity | Vulnerability | Repoted Tool | Risk | Mitigation |
+|---------|----------|---------|-----------------|-----|
+| |Depricated OpenSSH version 6.7p1, Weak SSH host key and MAC Algorithm  | Nmap, OpenVAS | | Upgrade to newer OpenSSH version  |
+| |H    | O | N |    |
+| |H    | M | Sec |  |
+| |M    | S | HTTP|  |
+| |M    | S | DNS |  |
