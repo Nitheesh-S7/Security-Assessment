@@ -26,7 +26,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
  **Nmap**
 
- * The scan revealed open ports 22 (ssh), 80 (http) and 443 (https)
+ * The scan revealed open ports 22 (SSH), 80 (HTTP) and 443 (HTTPS)
  * Port 22 is running OpenSSH 6.7p1 which outdated and has vulnerabilities like CVE-2016-0777 and CVE-2018-1547
  * Found 36 exposed directories through robots.txt for https://mmesec.com domain hosted on same IP including CHANGELOG.txt and intallation files exposing technologies and versions 
  * Drupal version 7.69 exposed which is deprecated and has muliple critical vulnerabilities like CVE-2020-13663 found in https://mmesec.com domain.
@@ -122,8 +122,8 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
 | Vulnerability | Repoted Tool | Mitigation |
 |----------|---------|-----------------|
-| High     | Served over HTTP; HTTPS not enforced / certificate name mismatch | SecurityHeaders / SSL Labs (ssl_labs.png) |
-| High     | Outdated OpenSSH 6.7p1 exposed on port 22 | Nmap (nmap_scan.png) |
-| High     | Missing security headers: CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy | SecurityHeaders (security_headers.png) |
-| Medium   | Server header reveals Apache (version disclosure) | HTTP response headers (security_headers.png / nmap) |
-| Medium   | SPF TXT includes internal references (mme.local) | DNS Lookup (dns_lookup.png) |
+| H    | S | Se|
+| H    | O | N |
+| H    | M | Sec |
+| M    | S | HTTP|
+| M    | S | DNS |
