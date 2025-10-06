@@ -51,12 +51,18 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
  **OpenVAS**
  
- * Weak Host Key Algorithm found for SSH which uses ssh-dss
+ * Weak Host Key Algorithm found for SSH which uses ssh-dss (Digital signature algorithm) which is depricated
  * Depricated TLS version 1.0 and 1.1 protocols found on certificate which is vulnerable to multiple CVE's 
  * Weak MAC algorithm umac-64-etm@openssh supported on SSH
 
  **MX Toolbox**
 
- *
+ * No DMARC record published 
+ * DMARC(Domain-based Message Authentication) policy is not enabled which makes it vulnerable to email spoofing with the lack of email verification
+ * TLS/SSL Certificate name mismatch in domain pointhing to a different domain
+ * A null DNS lookup was found for include (mme-srv-dc1.mme.local) which can cause problem in email delivery
+ * SOA (Start of Authority) Expire Value out of recommended range which may cause downtime if primary DNS server fails, secondary server may stop responding to DNS querries sooner than reccomended
+
+ **Hacker Target**
 
  
