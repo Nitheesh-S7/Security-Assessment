@@ -60,7 +60,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
  * No DMARC record published 
  * DMARC(Domain-based Message Authentication) policy is not enabled which makes it vulnerable to email spoofing with the lack of email verification
- * TLS/SSL Certificate name mismatch in domain pointhing to a different domain
+ * TLS/SSL Certificate name mismatch in domain pointing to a different domain
  * A null DNS lookup was found for include (mme-srv-dc1.mme.local) which can cause problem in email delivery
  * SOA (Start of Authority) Expire Value out of recommended range which may cause downtime if primary DNS server fails, secondary server may stop responding to DNS querries sooner than reccomended
 
@@ -90,5 +90,11 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
 
  **SSL Labs**
+
+ * TLS/SSL Certificate name mismatch domain name pointing to domain web.mmebvba.com
+ * Server dosent support TLS 1.3 only supports depricated TLS version 1.0 and 1.1
+ * Server dosent support forward secrecey
+ * The certificate expired at 22/5/2025
+ * The cerificate is self signed by web.mmebvba.com so it dosent have a root of trust form a Certificate Authority (CA) and is not trusted by browser.
 
  
