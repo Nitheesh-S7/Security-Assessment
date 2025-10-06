@@ -38,4 +38,11 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * X-Content-Type-Options header missing which can make it vulnerable to content sniffing attacks incorrectly assessing MIME type of files
  * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
  * No Content-Security-Policy which prevents attacks by verifiying only whitelisted data are being loaded in the website
+ * Drupal version 7 was indentified through x-generator header, Drupal 7 is outdated and has vulnerabilities
+ * Apache default files /icons/README was found which can leak information on server and version
+ * HTTP OPTIONS method is allowed which can be used to gain information of webserver and its users if Cross-Orgin-Resource-Sharing (CORS) is incorrectly configured.
+ * Strict-Transport-Security_Header (HSTS) not set which allows downgrade attacks from HTTTPS to HTTP
+ * No TLS/SSL Support found
+
+ **OWASP ZAP**
  * 
