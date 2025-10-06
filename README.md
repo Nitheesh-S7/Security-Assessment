@@ -18,6 +18,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 ---
 
 # Findings
+
  **Wappalyzer** 
  * Found the website uses Apache HTTP Server and Microsoft for Emails
 
@@ -80,7 +81,6 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
     * mmebvba.com
     * www.mmebvba.com
 
- 
  **SecurityHeaders.com**
 
  * X-Frame-Options header is not found which makes website vulnerable to clickjacking through i-frames
@@ -88,3 +88,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * Content-Security-Policy header not found on website which makes it more vulnerable to attacks
  * X-Content-Type-Options header missing which can make it vulnerable to content sniffing attacks 
  * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
+
+ **SSL Labs**
+
+ 
