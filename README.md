@@ -43,6 +43,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  **Nikto**
  
  * X-Content-Type-Options header missing which can make it vulnerable to content sniffing attacks incorrectly assessing MIME type of files
+ * Missing X-Frame-Options header which makes it vulnerable to click jacking through iframes
  * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
  * Server may leak inode number or multipart MIME boundary, which reveals child process IDs (PID) through E-Tag CVE-2003-1418
  * Content-Security-Policy header not found which prevents attacks by verifiying only whitelisted data are being loaded in the website
@@ -123,7 +124,8 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 |Severity | Vulnerability | Repoted Tool | Risk | Mitigation |
 |---------|----------|---------|-----------------|-----|
 | Medium |Depricated OpenSSH version 6.7p1, Weak SSH host key and MAC Algorithm  | Nmap, OpenVAS | Brute force attacks, Known CVE's | Upgrade to newer OpenSSH version  |
-| |Exposed CHANGELOG.txt, install.php, MAINTAINERS.txt and other file paths in robots.txt that have webserver version and technology information present also have no restricted access to their paths     | O | N |    |
-| |Depricated Drupal version 7.69 found on mmesec.com domain    | M | Sec |  |
-| |M    | Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch to web.mmebvba.com domain | HTTP|  |
-| |M    | S | DNS |  |
+| Low |Exposed CHANGELOG.txt, install.php, MAINTAINERS.txt and other file paths mostly relevent to mmesec.com host in the same ip present in robots.txt, also have no restricted access to their paths | Nmap, Nikto | Leaking web server Technologies and versions  | Remove files from webroot and restrict access  |
+| High |Depricated Drupal version 7.69 found on mmesec.com host    | Nmap, Nikto | Muliple known exploits | Updating Drupal version |
+| High |Expired Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch to web.mmebvba.com domain and no forward secrecy | Nmap, OpenVAS, SSL Labs, MX Toolbox, Nikto | Traffic being sent in clear text | Getting a valid certificate from trusted CA with proper domain name  |
+| |X-Frame options header missing    | S | DNS |  |
+|
