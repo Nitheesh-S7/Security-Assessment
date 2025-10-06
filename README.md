@@ -136,6 +136,5 @@ This is a report on security assessment in http://www.itsecgames.com domain, Inc
 | Medium | Strict-Transport-Security_Header (HSTS) header missing| OSWAP Zap, Nikto | Vulnerability to cryptographic downgrade attacks | Enable Strict-Transport-Security_Header |
 | Low |DMARC(Domain-based Message Authentication Reporting and Conformance) policy is not enabled |MX Toolbox |vulnerability to email spoofing with the lack of email verification | Setup DMARC for message authentication  |
 | Low | Permission-policy header missing | SecurityHeaders.com | Less contol over browser access to API's and features| Setup Permission-Policiy header with required API's and Features|
-| Low | SOA (Start of Authority) Expire Value out of recommended range |MX Toolbox | If primary DNS server fails, Secondary server may stop responding to DNS querries sooner than reccomended
-| Set recommended SOA expiration retry and refresh values|
+| Low | SOA (Start of Authority) Expire Value out of recommended range |MX Toolbox | If primary DNS server fails, Secondary server may stop responding to DNS querries sooner than reccomended| Set recommended SOA expiration retry and refresh values|
 | Low | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup |MX Toolbox | leaks internal Active direcory naming structure | Avoid leaking internal Zones filter DNS and Seperate internal and external DNS|
