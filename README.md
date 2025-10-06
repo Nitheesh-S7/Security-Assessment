@@ -123,7 +123,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 |Severity | Vulnerability | Repoted Tool | Risk | Mitigation |
 |---------|----------|---------|-----------------|-----|
 | Medium |Depricated OpenSSH version 6.7p1, Weak SSH host key and MAC Algorithm  | Nmap, OpenVAS | Brute force attacks, Known CVE's | Upgrade to newer OpenSSH version  |
-| |Exposed CHANGELOG.txt, install.php, MAINTAINERS.txt and other file paths in robots.txt that have version and technology information present also have no restricted access to their paths     | O | N |    |
+| |Exposed CHANGELOG.txt, install.php, MAINTAINERS.txt and other file paths in robots.txt that have webserver version and technology information present also have no restricted access to their paths     | O | N |    |
 | |Depricated Drupal version 7.69 found on mmesec.com domain    | M | Sec |  |
 | |M    | Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch to web.mmebvba.com domain | HTTP|  |
 | |M    | S | DNS |  |
