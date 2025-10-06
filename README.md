@@ -81,3 +81,10 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
     * www.mmebvba.com
 
  
+ **SecurityHeaders.com**
+
+ * X-Frame-Options header is not found which makes website vulnerable to clickjacking through i-frames
+ * Permission-policy header is missing which controls browser access to websites API's and features for more security
+ * Content-Security-Policy header not found on website which makes it more vulnerable to attacks
+ * X-Content-Type-Options header missing which can make it vulnerable to content sniffing attacks 
+ * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
