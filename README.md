@@ -53,14 +53,14 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
 ---
 
- **OWASP ZAP**
+ **OWASP ZAP**(Hosted scan)
  
  * Strict-Transport-Security_Header (HSTS) not set which allows downgrade attacks
  * Content-Security-Policy header not found on website which makes it more vulnerable to attacks
 
 ---
 
- **OpenVAS**
+ **OpenVAS**(Hosted Scan)
  
  * Weak Host Key Algorithm found for SSH which uses ssh-dss (Digital signature algorithm) which is depricated
  * Depricated TLS version 1.0 and 1.1 protocols found on certificate which is vulnerable to multiple CVE's 
