@@ -118,9 +118,9 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
 ---
 
-# Vulnerabilities and Mitigation
+# Vulnerabilities and Mitigations
 
-| Priority | Finding | Tool / Evidence |
+| Vulnerability | Repoted Tool | Mitigation |
 |----------|---------|-----------------|
 | High     | Served over HTTP; HTTPS not enforced / certificate name mismatch | SecurityHeaders / SSL Labs (ssl_labs.png) |
 | High     | Outdated OpenSSH 6.7p1 exposed on port 22 | Nmap (nmap_scan.png) |
