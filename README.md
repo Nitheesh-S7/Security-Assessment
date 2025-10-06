@@ -127,14 +127,14 @@ This is a report on security assessment in http://www.itsecgames.com domain, Inc
 | Low |Exposed CHANGELOG.txt, install.php, MAINTAINERS.txt and other file paths mostly relevent to mmesec.com host in the same ip present in robots.txt, also have no restricted access to their paths | Nmap, Nikto | Leaking web server Technologies and versions  | Remove files from webroot and restrict access  |
 | High |Depricated Drupal version 7.69 found on mmesec.com host    | Nmap, Nikto | Muliple known exploits | Updating Drupal version |
 | High |Expired Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch pointing to web.mmebvba.com domain and no forward secrecy | Nmap, OpenVAS, SSL Labs, MX Toolbox, Nikto | Traffic being sent in clear text | Getting a valid certificate from trusted CA with proper domain name  |
-| Medium |X-Frame options header missing    | S | DNS |  |
-| Medium |X-Content-Type-Options header missing| | | |
-| Medium |Referrer-Policy header missing| | | |
+| Medium |X-Frame options header missing | SecurityHeaders.com | DNS |  |
+| Medium |X-Content-Type-Options header missing| OSWAP Zap, SecurityHeaders.com| | |
+| Medium |Referrer-Policy header missing| SecurityHeaders.com| | |
 | High | E-Tag present in website| | | |
-| Medium |Content-Security-Policy header missing| | | |
+| Medium |Content-Security-Policy header missing| OSWAP Zap, SecurityHeaders.com | | |
 | Low |  HTTP OPTIONS method enabled| | | |
-| Medium | Strict-Transport-Security_Header (HSTS) header missing| | | |
+| Medium | Strict-Transport-Security_Header (HSTS) header missing| OSWAP Zap,  | | |
 | Low |DMARC(Domain-based Message Authentication) policy is not enabled | | | |
-| Low | Permission-policy header missing | | | |
+| Low | Permission-policy header missing | SecurityHeaders.com | | |
 | Low | SOA (Start of Authority) Expire Value out of recommended range | | | |
 | Low | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup | | | |
