@@ -115,4 +115,5 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * The certificate expired at 22/5/2025
  * The cerificate is self signed by web.mmebvba.com so it dosent have a root of trust form a Certificate Authority (CA) and is not trusted by browser.
 
- 
+---
+
