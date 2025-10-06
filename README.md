@@ -111,7 +111,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
  * TLS/SSL Certificate name mismatch domain name pointing to domain web.mmebvba.com
  * Server dosent support TLS 1.3 only supports depricated TLS versions 1.0 and 1.1
- * Server dosent support forward secrecey previous communications can be decrypted if decryption key leaks
+ * Server dosent support forward secrecey previous communications can be decrypted if TLS decryption key leaks
  * The certificate expired at 22/5/2025
  * The cerificate is self signed by web.mmebvba.com so it dosent have a root of trust form a Certificate Authority (CA) and is not trusted by browser.
 
