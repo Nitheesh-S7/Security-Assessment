@@ -19,6 +19,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
 # Findings
 
+---
  **Wappalyzer** 
  * Found the website uses Apache HTTP Server and Microsoft for Emails
 
