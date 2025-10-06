@@ -118,6 +118,8 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
 ---
 
+# Vulnerabilities and Mitigation
+
 | Priority | Finding | Tool / Evidence |
 |----------|---------|-----------------|
 | High     | Served over HTTP; HTTPS not enforced / certificate name mismatch | SecurityHeaders / SSL Labs (ssl_labs.png) |
