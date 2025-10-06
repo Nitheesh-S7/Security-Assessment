@@ -134,7 +134,7 @@ This is a report on security assessment in http://www.itsecgames.com domain, Inc
 | Medium |Content-Security-Policy header missing| OSWAP Zap, SecurityHeaders.com, Nikto | | |
 | Low |  HTTP OPTIONS method enabled| Nikto | | |
 | Medium | Strict-Transport-Security_Header (HSTS) header missing| OSWAP Zap, Nikto | | |
-| Low |DMARC(Domain-based Message Authentication) policy is not enabled | | | |
+| Low |DMARC(Domain-based Message Authentication) policy is not enabled |MX Toolbox | | |
 | Low | Permission-policy header missing | SecurityHeaders.com | | |
-| Low | SOA (Start of Authority) Expire Value out of recommended range | | | |
-| Low | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup | | | |
+| Low | SOA (Start of Authority) Expire Value out of recommended range |MX Toolbox | | |
+| Low | Internal Active directory name mme-srv-dc1.mme.local found on DNS lookup |MX Toolbox | | |
