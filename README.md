@@ -10,7 +10,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * **Nikto**  - *(vulnerability scanning tool for web servers)*
  * **OWASP ZAP**  - *(web application security scanner)*
  * **OpenVAS**  - *(vulnerability scanner)*
- * **MX Toolbox**  - *(enumerates DNS,DMARC and SPF records)*
+ * **MX Toolbox**  - *(enumerates DNS, DMARC and SPF records)*
  * **Hacker Target** - *(Reverse IP lookup for domains in IP)*
  * **SecurityHeaders.com** - *(Checks for vulnerable and missing headers)*
  * **SSL Labs** - *(provides website SSL/TLS certificate status and information)*
@@ -38,14 +38,25 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  * X-Content-Type-Options header missing which can make it vulnerable to content sniffing attacks incorrectly assessing MIME type of files
  * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
  * Content-Security-Policy header not found which prevents attacks by verifiying only whitelisted data are being loaded in the website
- * Drupal version 7 was indentified through x-generator header, Drupal 7 is outdated and has vulnerabilities
+ * Drupal version 7 was indentified through x-generator header, Drupal 7 is outdated and has multiple vulnerabilities
  * Apache default files /icons/README was found which can leak information on server and version
  * HTTP OPTIONS method is allowed which can be used to gain information of webserver and its users if Cross-Orgin-Resource-Sharing (CORS) is incorrectly configured.
  * Strict-Transport-Security_Header (HSTS) not set which allows downgrade attacks from HTTTPS to HTTP
  * No TLS/SSL Support found
 
  **OWASP ZAP**
+ 
  * Strict-Transport-Security_Header (HSTS) not set which allows downgrade attacks
  * Content-Security-Policy header not found on website which makes it more vulnerable to attacks
 
  **OpenVAS**
+ 
+ * Weak Host Key Algorithm found for SSH which uses ssh-dss
+ * Depricated TLS version 1.0 and 1.1 protocols found on certificate which is vulnerable to multiple CVE's 
+ * Weak MAC algorithm umac-64-etm@openssh supported on SSH
+
+ **MX Toolbox**
+
+ *
+
+ 
