@@ -128,12 +128,12 @@ This is a report on security assessment in http://www.itsecgames.com domain, Inc
 | High |Depricated Drupal version 7.69 found on mmesec.com host    | Nmap, Nikto | Muliple known exploits | Updating Drupal version |
 | High |Expired Self Signed certificate with outdated TLS versions 1.0 and 1.1 having name mismatch pointing to web.mmebvba.com domain and no forward secrecy | Nmap, OpenVAS, SSL Labs, MX Toolbox, Nikto | Traffic being sent in clear text | Getting a valid certificate from trusted CA with proper domain name  |
 | Medium |X-Frame options header missing | SecurityHeaders.com | DNS |  |
-| Medium |X-Content-Type-Options header missing| OSWAP Zap, SecurityHeaders.com| | |
-| Medium |Referrer-Policy header missing| SecurityHeaders.com| | |
-| High | E-Tag present in website| | | |
-| Medium |Content-Security-Policy header missing| OSWAP Zap, SecurityHeaders.com | | |
-| Low |  HTTP OPTIONS method enabled| | | |
-| Medium | Strict-Transport-Security_Header (HSTS) header missing| OSWAP Zap,  | | |
+| Medium |X-Content-Type-Options header missing| SecurityHeaders.com, Nikto| | |
+| Medium |Referrer-Policy header missing| SecurityHeaders.com, Nikto| | |
+| High | E-Tag present in website| Nikto | | |
+| Medium |Content-Security-Policy header missing| OSWAP Zap, SecurityHeaders.com, Nikto | | |
+| Low |  HTTP OPTIONS method enabled| Nikto | | |
+| Medium | Strict-Transport-Security_Header (HSTS) header missing| OSWAP Zap, Nikto | | |
 | Low |DMARC(Domain-based Message Authentication) policy is not enabled | | | |
 | Low | Permission-policy header missing | SecurityHeaders.com | | |
 | Low | SOA (Start of Authority) Expire Value out of recommended range | | | |
