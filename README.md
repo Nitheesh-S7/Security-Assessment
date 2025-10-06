@@ -44,6 +44,7 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
  
  * X-Content-Type-Options header missing which can make it vulnerable to content sniffing attacks incorrectly assessing MIME type of files
  * Referrer-Policy header missing which can leak sensitive information from url to other sites when clicking links.
+ * Server may leak inode number or multipart MIME boundary, which reveals child process IDs (PID) through E-Tag CVE-2003-1418
  * Content-Security-Policy header not found which prevents attacks by verifiying only whitelisted data are being loaded in the website
  * Drupal version 7 was indentified through x-generator header, Drupal 7 is outdated and has multiple vulnerabilities
  * Apache default files /icons/README was found which can leak information on server and version
@@ -117,3 +118,10 @@ This is a report on security assessment of http://www.itsecgames.com domain incl
 
 ---
 
+| Priority | Finding | Tool / Evidence |
+|----------|---------|-----------------|
+| High     | Served over HTTP; HTTPS not enforced / certificate name mismatch | SecurityHeaders / SSL Labs (ssl_labs.png) |
+| High     | Outdated OpenSSH 6.7p1 exposed on port 22 | Nmap (nmap_scan.png) |
+| High     | Missing security headers: CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy | SecurityHeaders (security_headers.png) |
+| Medium   | Server header reveals Apache (version disclosure) | HTTP response headers (security_headers.png / nmap) |
+| Medium   | SPF TXT includes internal references (mme.local) | DNS Lookup (dns_lookup.png) |
